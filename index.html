@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Video Latar Belakang -->
+  <video autoplay muted loop id="bg-video">
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Konten Utama -->
+  <div class="content">
+    <h1></h1>
+    <div class="confession-box">
+      <p id="confession-text">Sebelum Klik Tombol Melihat Pesan, Klik Dulu putar Musik Nya Ya Sayang</p>
+      <button id="reveal-btn">Klik untuk lihat</button>
+      <!-- Tombol Musik -->
+      <button id="play-music-btn">
+        <span class="icon">🎵</span>
+        <span id="music-status">Putar Musik</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Musik -->
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Elemen Bunga Jatuh -->
+  <div id="falling-flowers"></div>
+
+  <script src="script.js"></script>
+  <script src="falling-flowers.js"></script> <!-- Skrip animasi bunga -->
+</body>
+</html>
